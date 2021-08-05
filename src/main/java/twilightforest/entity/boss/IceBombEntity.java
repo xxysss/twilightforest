@@ -54,10 +54,7 @@ public class IceBombEntity extends TFThrowableEntity {
 			for (int y = -range; y <= range; y++) {
 				for (int z = -range; z <= range; z++) {
 					BlockPos pos = new BlockPos(ix + x, iy + y, iz + z);
-					BlockSnapshot blocksnapshot = BlockSnapshot.create(world.getDimensionKey(), world, pos);
-					if (!world.isRemote && !MinecraftForge.EVENT_BUS.post(new BlockEvent.EntityPlaceEvent(blocksnapshot, world.getBlockState(pos), null))) {
-						this.doTerrainEffect(pos);
-					}
+					this.doTerrainEffect(pos);
 				}
 			}
 		}
