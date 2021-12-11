@@ -47,7 +47,7 @@ public class Minoshroom extends Minotaur {
 	public Minoshroom(EntityType<? extends Minoshroom> type, Level world) {
 		super(type, world);
 		this.xpReward = 100;
-		this.setDropChance(EquipmentSlot.MAINHAND, 1.1F); // > 1 means it is not randomly damaged when dropped
+		this.setDropChance(EquipmentSlot.MAINHAND, 0.0F);
 	}
 
 	@Override

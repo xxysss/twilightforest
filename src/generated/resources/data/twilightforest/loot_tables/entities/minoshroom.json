@@ -46,6 +46,16 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "twilightforest:diamond_minotaur_axe"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "conditions": [
             {
               "condition": "twilightforest:mod_exists",
